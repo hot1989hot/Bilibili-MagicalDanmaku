@@ -10595,6 +10595,11 @@ void MainWindow::on_chatGPTModelNameCombo_activated(const QString &arg1)
     us->setValue("chatgpt/model_name", us->chatgpt_model_name = arg1);
 }
 
+void MainWindow::on_chatGPTModelNameCombo_editTextChanged(const QString &arg1)
+{
+    us->setValue("chatgpt/model_name", us->chatgpt_model_name = arg1);
+}
+
 void MainWindow::on_chatGPTMaxTokenCountSpin_valueChanged(int arg1)
 {
     us->setValue("chatgpt/max_token_count", us->chatgpt_max_token_count = arg1);
